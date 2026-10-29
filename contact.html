@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | GREATER.realestate</title>
+  <meta name="description" content="Contact GREATER.realestate about education, association management, MLS services, or partnerships.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <!-- ===== PAGE HERO — EDIT: image, title, intro ===== -->
+    <section class="page-hero bg-img" style="--img:url('images/page-contact.jpg')">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a><span>/</span>Contact</p>
+        <span class="eyebrow eyebrow--light">Let's Connect</span>
+        <h1>We'd Love to Hear From You.</h1>
+        <p>Questions about classes, association services, or partnerships? Send us a message and we'll get back to you.</p>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container contact-grid">
+
+        <!-- ===== CONTACT DETAILS — EDIT: address, phone, email, hours ===== -->
+        <div class="contact-info">
+          <span class="eyebrow">Get in Touch</span>
+          <h2>Reach our team.</h2>
+          <p>Our staff is available Monday through Friday to help with education, membership, and MLS questions.</p>
+
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            <div><strong>Office</strong>123 Main Street<br>City, ST 00000</div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            <div><strong>Phone</strong><a href="tel:+10000000000">(000) 000-0000</a></div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            <div><strong>Email</strong><a href="mailto:info@greater.realestate">info@greater.realestate</a></div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div><strong>Hours</strong>Monday – Friday, 8:00 AM – 5:00 PM</div>
+          </div>
+        </div>
+
+        <!-- ===== CONTACT FORM
+             EDIT: set action="" to your form handler (for example a Formspree or
+             web host form URL). Until then, submitting does nothing. ===== -->
+        <form class="form" action="#" method="POST">
+          <div class="form__row">
+            <div class="field">
+              <label for="first">First Name</label>
+              <input id="first" name="first_name" type="text" autocomplete="given-name" required>
+            </div>
+            <div class="field">
+              <label for="last">Last Name</label>
+              <input id="last" name="last_name" type="text" autocomplete="family-name" required>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+          </div>
+          <div class="field">
+            <label for="topic">I'm interested in</label>
+            <select id="topic" name="topic">
+              <option>Learning Center / Classes</option>
+              <option>Association Management</option>
+              <option>MLS Services</option>
+              <option>Strategic Consulting</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+          <p class="form__note">We typically respond within one business day.</p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="layout.js"></script>
+</body>
+</html>
